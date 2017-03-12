@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.abbisqq.thechallenge.MainActivity"
+    android:padding="20dp"
+    android:id="@+id/mainLayout"
+    android:background="@drawable/defaultgamebackground"
+    android:clickable="false">
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/aButton"
+        android:src="@drawable/anotpressed"
+        android:background="#00ffffff"
+        android:onClick="onClick"
+        android:padding="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/bButton"
+        android:src="@drawable/bnotpressed"
+        android:background="#00ffffff"
+        android:padding="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/cButton"
+        android:src="@drawable/cnotpressed"
+        android:background="#00ffffff"
+        android:onClick="onClick"
+        android:padding="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/dButton"
+        android:layout_alignStart="@+id/dButton"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/middleButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/anotpressed"
+        android:background="#00ffffff"
+        android:padding="20dp"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/dButton"
+        android:src="@drawable/dnotpressed"
+        android:background="#00ffffff"
+        android:padding="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeText"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:text="0"
+        android:textSize="40dp"
+        android:layout_alignBottom="@+id/cButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="0 points"
+        android:id="@+id/scoreText"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_alignTop="@+id/dButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/helpText1"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/middleButton"
+        android:textSize="30dp"
+        android:textColor="#ffff00"
+        android:padding="10dp"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/helpText2"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/helpText1"
+        android:layout_toRightOf="@+id/middleButton"
+        android:layout_toEndOf="@+id/middleButton"
+        android:textColor="#ffff00"
+        android:padding="10dp"
+        android:textAlignment="textStart" />
+
+</RelativeLayout>

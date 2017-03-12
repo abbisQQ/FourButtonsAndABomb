@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.highScoreFragment"
+    android:background="@drawable/chalenge_buttons">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="200"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:id="@+id/textView7"
+        android:gravity="center"
+        android:maxLength="10"
+        android:textSize="20sp"
+        android:background="@drawable/chalenge_buttons"
+        android:layout_alignBottom="@+id/nameText1"
+        android:layout_toStartOf="@+id/editText"
+        android:layout_alignTop="@+id/nameText1" />
+
+    <TextView
+        android:text="user2"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:id="@+id/nameText2"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/nameText1"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="20sp"
+        android:background="@drawable/chalenge_buttons"
+        android:layout_toStartOf="@+id/scoreView" />
+
+    <TextView
+        android:text="user3"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:gravity="center"
+        android:id="@+id/nameText3"
+        android:layout_alignStart="@+id/nameText2"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="20sp"
+        android:layout_below="@+id/saveButton"
+        android:background="@drawable/chalenge_buttons"
+        android:layout_toStartOf="@+id/scoreView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:id="@+id/editText"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:layout_height="40sp"
+        android:background="@drawable/chalenge_buttons"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColorHint="@android:color/background_light" />
+
+    <Button
+        android:text="SAVE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreView2"
+        android:id="@+id/saveButton"
+        android:layout_alignEnd="@+id/editText"
+        android:background="@drawable/chalenge_buttons"
+        android:gravity="center"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="User1"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:id="@+id/nameText1"
+        android:gravity="center"
+        android:maxLength="10"
+        android:textSize="20sp"
+        android:background="@drawable/chalenge_buttons"
+        android:layout_marginBottom="37dp"
+        android:layout_above="@+id/nameText2"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/scoreView" />
+
+    <TextView
+        android:text="200"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:id="@+id/scoreView"
+        android:gravity="center"
+        android:maxLength="10"
+        android:textSize="20sp"
+        android:background="@drawable/chalenge_buttons"
+        android:layout_alignBottom="@+id/nameText1"
+        android:layout_toStartOf="@+id/editText"
+        android:layout_alignTop="@+id/nameText1" />
+
+    <TextView
+        android:text="100"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:id="@+id/scoreView3"
+        android:gravity="center"
+        android:maxLength="10"
+        android:textSize="20sp"
+        android:background="@drawable/chalenge_buttons"
+        android:layout_alignBottom="@+id/nameText3"
+        android:layout_toEndOf="@+id/nameText3"
+        android:layout_alignTop="@+id/nameText3" />
+
+    <TextView
+        android:text="150"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:id="@+id/scoreView2"
+        android:gravity="center"
+        android:maxLength="10"
+        android:textSize="20sp"
+        android:background="@drawable/chalenge_buttons"
+        android:layout_alignTop="@+id/editText"
+        android:layout_toEndOf="@+id/nameText2" />
+
+    <TextView
+        android:text="3RD"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:id="@+id/textView4"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_light"
+        android:layout_above="@+id/nameText3"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:text="1ST"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_light"
+        android:layout_marginStart="97dp"
+        android:layout_above="@+id/nameText1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="2ND"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:id="@+id/textView5"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/scoreView"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:id="@+id/textView6"
+        android:gravity="center"
+        android:maxLength="10"
+        android:textSize="20sp"
+        android:background="@drawable/chalenge_buttons"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignTop="@+id/textView7" />
+
+</RelativeLayout>

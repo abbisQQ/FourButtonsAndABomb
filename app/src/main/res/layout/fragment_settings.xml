@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.settingsFragment"
+    android:background="@drawable/chalenge_buttons">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/settingsLayout"
+        android:background="@drawable/defaultgamebackground"
+        android:padding="10sp">
+
+        <CheckBox
+            android:text="mute the buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioButton3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="91dp"
+            android:id="@+id/checkBox"
+            android:background="@drawable/defaultgamebackground"
+            android:padding="10sp" />
+
+        <CheckBox
+            android:text="mute the music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/radioButton3"
+            android:layout_alignStart="@+id/checkBox"
+            android:id="@+id/checkBox2"
+            android:background="@drawable/defaultgamebackground"
+            android:layout_alignEnd="@+id/checkBox"
+            android:padding="10sp" />
+
+        <RadioButton
+            android:text="song4"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton4"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/defaultgamebackground"
+            android:padding="10sp"
+            android:layout_below="@+id/radioButton3"
+            android:layout_alignStart="@+id/radioButton3" />
+
+        <RadioButton
+            android:text="song3"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:id="@+id/radioButton3"
+            android:background="@drawable/defaultgamebackground"
+            android:padding="10sp"
+            android:layout_below="@+id/radioButton2"
+            android:layout_alignStart="@+id/radioButton2" />
+
+        <RadioButton
+            android:text="song1"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:id="@+id/radioButton1"
+            android:background="@drawable/defaultgamebackground"
+            android:padding="10sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="44dp" />
+
+        <RadioButton
+            android:text="song2"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:id="@+id/radioButton2"
+            android:background="@drawable/defaultgamebackground"
+            android:padding="10sp"
+            android:layout_below="@+id/radioButton1"
+            android:layout_alignStart="@+id/radioButton1" />
+    </RelativeLayout>
+</FrameLayout>
